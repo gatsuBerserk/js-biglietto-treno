@@ -23,8 +23,8 @@ console.log(
 
 // Sale underage
 let percentToGet = 20;
-let underageSale = (percentToGet / 100) * price; 
-let finalPrice = price - underageSale;
+let underageSale = ((percentToGet / 100) * price).toFixed(2); 
+let finalPrice = (price - underageSale).toFixed(2);
 
 console.log( 
     `Sconto del 20% sul biglietto per minorenni: ${underageSale} € 
@@ -35,8 +35,8 @@ console.log(
 
 // Sale Over 65
 let percentToGet65 = 40; 
-let overSale= (percentToGet65 / 100) * price; 
-let finalPriceOver= price - overSale; 
+let overSale= ((percentToGet65 / 100) * price).toFixed(2); 
+let finalPriceOver= (price - overSale).toFixed(2); 
 
 console.log(
     `Sconto del 40% sul biglietto per Over 65: ${overSale} € 
