@@ -17,6 +17,29 @@ let price = km * 0.21;
 
 console.log( 
     `Km da percorrere: ${km}
-    Prezzo biglietto: ${price}  
+    Prezzo biglietto: ${price} €  
+    `
+);
+
+// Sale underage
+let percentToGet = 20;
+let underageSale = (percentToGet / 100) * price; 
+let finalPrice = price - underageSale;
+
+console.log( 
+    `Sconto del 20% sul biglietto per minorenni: ${underageSale} € 
+    Prezzo biglietto: ${finalPrice}  
+    `
+
+); 
+
+// Sale Over 65
+let percentToGet65 = 40; 
+let overSale= (percentToGet65 / 100) * price; 
+let finalPriceOver= price - overSale; 
+
+console.log(
+    `Sconto del 40% sul biglietto per Over 65: ${overSale} € 
+    Prezzo biglietto: ${finalPriceOver}  
     `
 );
