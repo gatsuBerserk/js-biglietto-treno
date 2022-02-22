@@ -1,0 +1,5 @@
+.my-border{
+    border: 1px solid tomato;
+    border-radius: 50px;
+    height: 50px; 
+}
